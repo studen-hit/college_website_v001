@@ -1201,6 +1201,14 @@ header {
     margin-top: 12px;
     margin-left: 30em;
     padding: 0.5rem 0.7rem;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.explore_more_courses .btn-explore {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .wrapper span button:nth-of-type(1) {
@@ -1767,4 +1775,52 @@ events and news added  */
     background-position: center;
     position: relative;
 
+}
+
+
+
+.academic_program_section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.academic_scroll_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.academic_scroll_container .wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+
+    width: max-content;
+
+    padding: 50px 6vw;
+}
+
+
+.program_card {
+    flex: 0 0 380px;
+    width: 380px;
+    min-height: 450px;
+    will-change: transform, opacity, filter;
+     transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.program_card:hover {
+   transform: translateY(-12px) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+html,
+body {
+    overflow-x: hidden;
 }
